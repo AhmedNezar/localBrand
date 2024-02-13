@@ -1,0 +1,146 @@
+.hero {
+    height: 100vh;
+    background: url(../images/home.png) center/cover no-repeat;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
+
+.hero_container {
+    width: 60%;
+    max-height: 70vh;
+}
+
+.hero_text1 {
+    font-size: 64px;
+    color: #fff;
+}
+
+.hero_buttons {
+    width: 75%;
+}
+
+.white_button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 5px 20px;
+    width: 150px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.start {
+    position: relative;
+    border: 0;
+}
+
+.start::before {
+    content: "";
+    width: 49%;
+    height: 100%;
+    position: absolute;
+    border-width: 2px 0px 2px 2px;
+    border-color: #fff;
+    border-style: solid;
+    left: 0;
+    top: 0;
+}
+
+.start::after {
+    content: "";
+    width: 49%;
+    height: 100%;
+    position: absolute;
+    border-width: 2px 2px 2px 0px;
+    border-color: #fff;
+    border-style: solid;
+    right: 0;
+    top: 0;
+}
+
+.carousel_caption {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 0;
+    display: flex;
+    align-items: end;
+}
+
+.hero_text2 {
+    font-size: 44px;
+    font-weight: 300;
+}
+
+
+.hero_paragraph {
+    color: #444;
+    font-family: 'Inter', sans-serif;
+}
+
+.black_button {
+    background: #000;
+    border: 2px solid #000;
+    color: #fff;
+    padding: 5px 20px;
+    width: 150px;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.carousel-item {
+    height: 70vh;
+    align-items: center;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex;
+}
+
+.section_title {
+    font-weight: 300;
+}
+
+.collection_overlay {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    color: #fff;
+}
+
+.brand {
+    width: 200px;
+}
+
+.collection_text {
+    padding: 0 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero_container {
+        width: 80%;
+    }
+    .hero_text1 {
+        font-size: 48px;
+    }
+    .hero_buttons {
+        width: 100%;
+    }
+    .hero_text2 {
+        font-size: 32px;
+    }
+    .carousel_caption {
+        height: 100%;
+    }
+}
